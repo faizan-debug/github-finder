@@ -14,23 +14,23 @@ const App = () => {
   
     return (
       <GithubState>
-        <AlertState>
-      <Router>
-      <div className="App">
-        <Navbar />
-        <div className='container'>
-          <Alert />
-          <Routes>
-            <Route exact path='/' Component={Home} />
-             <Route exact path='/about' Component={About}/> 
-             <Route exact path='/user/:login' Component={User}/> 
-             <Route Component={NotFound} />
-          </Routes>
-        </div>
-      </div>
-      </Router>
+      <AlertState>
+        <Router>
+          <div className="App">
+            <Navbar />
+            <div className="container">
+              <Alert />
+              <Routes>
+                <Route exact path='/' Component={Home} />
+                <Route exact path='/about' Component={About} />
+                <Route exact path='/user/:login' Component={User} />
+                <Route Component={NotFound} />
+              </Routes>
+            </div>
+          </div>
+        </Router>
       </AlertState>
-      </GithubState>
+    </GithubState>
     );
   }
 
